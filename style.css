@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color:white;
+    font-family: 'Share Tech', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+}
+
+#calcContainer{
+    height: 500px;
+    width: 500px;
+    background-color: wheat;
+    margin: auto;
+}
