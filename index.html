@@ -2,21 +2,44 @@
 <head>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Calculator Project by MeeseGod</title>
+<title>Super Epic Scifi</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="images/odin32x32.png" sizes="32x32">
-</head>
-
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=VT323&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=VT323&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
 </style>
-
-
-
+</head>
 <body>
     <h1>Calculator</h1>
-</body>
+    <div id="calculatorContainer">
+        <div id="screen">
+            <div id="passingValue"></div>
+            <div id="heldValue"></div>
+        </div>
+        <div id="buttonContainer">
+            <button id="button7" class="buttons" value = '7' onclick="checkInput(this)">7</button>
+            <button id="button8" class="buttons" value = '8' onclick="checkInput(this)">8</button>
+            <button id="button9" class="buttons" value = '9' onclick="checkInput(this)">9</button>
+            <button id="buttonClear" class="buttons" onclick="clearScreen()">Clear</button>
+            <button id="button4" class="buttons" value = '4' onclick="checkInput(this)">4</button>
+            <button id="button5" class="buttons" value = '5' onclick="checkInput(this)">5</button>
+            <button id="button6" class="buttons" value = '6' onclick="checkInput(this)">6</button>
+            <button id="buttonBackspace" class="buttons">&lt;-</button>
+            <button id="buttonDivide" class="buttons" onclick="divide()">/</button>
+            <button id="button1" class="buttons" value = '1' onclick="checkInput(this)">1</button>
+            <button id="button2" class="buttons" value = '2' onclick="checkInput(this)">2</button>
+            <button id="button3" class="buttons" value = '3' onclick="checkInput(this)">3</button>
+            <button id="buttonMultiply" class="buttons" onclick="multiply()">*</button>
+            <button id="buttonSubtract" class="buttons" onclick="subtract()">-</button>
+            <button id="button0" class="buttons" value = '0' onclick="checkInput(this)">0</button>
+            <button id="buttonDot" class="buttons" value = '.' onclick="checkInput(this)">.</button>
+            <button id="buttonEquals" class="buttons" onclick="equal()">=</button>
+            <button id="buttonAdd" class="buttons" onclick="add()">+</button>
+        </div>
+    </div>
 
+
+</body>
 </html>
 <script src="script.js"></script>
