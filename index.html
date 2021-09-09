@@ -2,16 +2,17 @@
 <head>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Super Epic Scifi</title>
+<title>MeeseGod - Sci-fi Calculator</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/odin32x32.png" sizes="32x32">
 <style>
         @import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=VT323&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
 </style>
 </head>
 <body>
-    <h1>Calculator</h1>
+    <h1>Sci-fi Calculator</h1>
     <div id="calculatorContainer">
         <div id="screen">
             <div id="passingValue"></div>
@@ -25,7 +26,7 @@
             <button id="button4" class="buttons" value = '4' onclick="checkInput(this)">4</button>
             <button id="button5" class="buttons" value = '5' onclick="checkInput(this)">5</button>
             <button id="button6" class="buttons" value = '6' onclick="checkInput(this)">6</button>
-            <button id="buttonBackspace" class="buttons">&lt;-</button>
+            <button id="buttonBackspace" class="buttons" onclick="removeLastNumber()">&lt;-</button>
             <button id="buttonDivide" class="buttons" onclick="divide()">/</button>
             <button id="button1" class="buttons" value = '1' onclick="checkInput(this)">1</button>
             <button id="button2" class="buttons" value = '2' onclick="checkInput(this)">2</button>
@@ -33,7 +34,7 @@
             <button id="buttonMultiply" class="buttons" onclick="multiply()">*</button>
             <button id="buttonSubtract" class="buttons" onclick="subtract()">-</button>
             <button id="button0" class="buttons" value = '0' onclick="checkInput(this)">0</button>
-            <button id="buttonDot" class="buttons" value = '.' onclick="checkInput(this)">.</button>
+            <button id="buttonDot" class="buttons" value = '.' onclick="addDecimalPoint()">.</button>
             <button id="buttonEquals" class="buttons" onclick="equal()">=</button>
             <button id="buttonAdd" class="buttons" onclick="add()">+</button>
         </div>
