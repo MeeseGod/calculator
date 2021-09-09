@@ -218,4 +218,4 @@ if(passingInput != ''){
     document.getElementById("passingValue").innerHTML = passingInput;
 }
 
-console.log("Made by MeeseGod for The Odin Project 🦌 (https://github.com/MeeseGod)")
+console.log("Made by MeeseGod for The Odin Project 🦌 (https://github.com/MeeseGod)");
